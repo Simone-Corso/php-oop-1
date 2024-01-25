@@ -39,7 +39,9 @@ foreach ($movies as $movie) {
 <body>
 
 <header>
-  <h1>film</h1>
+  <h1 class="title text-center mt-3 p-5 ">
+    film
+  </h1>
 </header>
 
 <main>
