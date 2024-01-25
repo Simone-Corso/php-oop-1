@@ -50,7 +50,7 @@ foreach ($movies as $movie) {
     <div class="container">
         <div class="row">
             <?php foreach ($movies as $movie) { ?>
-                <div class="col-4">
+                <div class="col-4 p-3">
                     <div class="card" style="width: ">
                         <img src="<?php echo $movie->image; ?>" class="card-img" alt="">
                         <div class="card-body">
