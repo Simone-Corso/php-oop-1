@@ -7,8 +7,8 @@
 class movie{
     public $title;
     public $genre;
-    public $RealesYear;
-}
+    public $realesyear;
+
 
 /**
  * qui inserirò il costruttore
@@ -18,10 +18,11 @@ class movie{
  * @param string $realesyear che produce l'anno che è stato prodotto
  */
 
- public function __construct($title, $genre, $RealesYear) {
+ public function __construct($title, $genre, $realesyear) {
         $this->title = $title;
         $this->genre = $genre;
-        $this->realesyear = $RealesYear;
+        $this->realesyear = $realesyear;
+    }
  }
 
  /**
@@ -33,3 +34,6 @@ class movie{
         echo "Genre: {$this->genre}",
         echo "Year: {$this->realesyear}";
     }
+
+    
+
