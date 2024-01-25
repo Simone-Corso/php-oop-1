@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #3689D8;
+    background-color: rgb(186, 185, 185);
 }
 
 .btn{
@@ -7,7 +7,22 @@
     background-color: white;
 }
 
+.navbar {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0s ease;
+}
+
+.navbar:hover {
+    border-bottom: 2px solid black;
+}
+
+
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    background-color: rgb(186, 185, 185);
+}
+
+.card{
+    border: colorrgb(186, 185, 185);
 }
