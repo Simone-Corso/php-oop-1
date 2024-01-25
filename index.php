@@ -44,19 +44,21 @@ foreach ($movies as $movie) {
 <nav class="navbar h-50">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">StreamingMovie</a>
-</nav>
     <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn" type="submit">Search</button>
       </form>
+
+  </nav>
+    
 </header>
 
 <main>
     <div class="container mt-5">
-        <div class="row">
+        <div class="row d-flex">
             <?php foreach ($movies as $movie) { ?>
                 <div class="col-4 p-3">
-                    <div class="card" style="width: ">
+                    <div class="card h-100 " style=" ">
                         <img src="<?php echo $movie->image; ?>" class="card-img" alt="">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $movie->title; ?></h5>
