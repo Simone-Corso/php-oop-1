@@ -31,7 +31,7 @@ class movie{
 
     public function movieInfo() {
         echo "Title: {$this->title}";
-        echo "Genre: {$this->genre}";
+        echo "Genre:" . implode(',' , $this->genre);
         echo "Year: {$this->realesyear}";
     }
 }
