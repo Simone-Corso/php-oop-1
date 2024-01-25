@@ -9,17 +9,19 @@
 /**
  * creiamo un istanza del movie
  */
-
- $movie = new Movie("Fast and Furious", ["Azione", "Giallo"], 2001, "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIfclk0cjsddvp1d2hSsOc6j4Oge8zyJq8zvGhG1ErFeRe_6dm");
-
- $movie = new Movie("2 Fast 2 Furious", ["Azione", "Giallo"], 2003, "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSudidhR3TCIzRUMURMV-cOjOYzNH7oTrlVJAUs-goIdhgxKKD");
-
+$movies = [
+  new Movie("Fast and Furious", ["Azione", "Giallo"], 2001, "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIfclk0cjsddvp1d2hSsOc6j4Oge8zyJq8zvGhG1ErFeRe_6dm"),
+  new Movie("2 Fast 2 Furious", ["Azione", "Giallo"], 2003, "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSudidhR3TCIzRUMURMV-cOjOYzNH7oTrlVJAUs-goIdhgxKKD"),
+];
  /**
   * adesso provo a stampare i film che ho inserito sopra
   */
 
+  
+foreach ($movies as $movie) {
   echo "movie:";
   $movie->movieInfo();
+}
   
 
 ?>
@@ -41,23 +43,22 @@
 </header>
 
 <main>
-  <div class="container">
-    <div class="row">
-    <?php foreach ($movie as $movie) { ?>
-      <div class="col-4">
-    <div class="card" style="width: ">
-  <img src="<?php echo $movie->image; ?>" class="card-img-top" alt="">
-      <div class="card-body">
-        <h5 class="card-title"><?php echo $movie->title; ?></h5>
-        <p class="card-text"><?php echo implode(' , ' , $movie->genre);?></p>
-        <p class="card-text"><?php echo $movie->realesyear;?></p>
-      </div>
-      </div>
-    <?php } ?>
+    <div class="container">
+        <div class="row">
+            <?php foreach ($movies as $movie) { ?>
+                <div class="col-4">
+                    <div class="card" style="width: ">
+                        <img src="<?php echo $movie->image; ?>" class="card-img" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $movie->title; ?></h5>
+                            <p class="card-text">Genre: <?php echo implode(', ', $movie->genre); ?></p>
+                            <p class="card-text">Year: <?php echo $movie->realesyear; ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
     </div>
-  </div>
-
-</div>
 </main>
 
 
