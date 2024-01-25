@@ -43,15 +43,17 @@
 <main>
   <div class="container">
     <div class="row">
+    <?php foreach ($movie as $movie) { ?>
       <div class="col-4">
     <div class="card" style="width: ">
-  <img src="<?php echo $movie->image; ?>" class="card-img-top" alt="...">
+  <img src="<?php echo $movie->image; ?>" class="card-img-top" alt="">
       <div class="card-body">
         <h5 class="card-title"><?php echo $movie->title; ?></h5>
         <p class="card-text"><?php echo implode(' , ' , $movie->genre);?></p>
         <p class="card-text"><?php echo $movie->realesyear;?></p>
       </div>
       </div>
+    <?php } ?>
     </div>
   </div>
 
