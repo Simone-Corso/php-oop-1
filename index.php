@@ -12,7 +12,7 @@
 
  $movieFirst = new Movie("Fast and Furious", ["Azione", "Giallo"], 2001, "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIfclk0cjsddvp1d2hSsOc6j4Oge8zyJq8zvGhG1ErFeRe_6dm");
 
- $movieTwo = new Movie("2 Fast 2 Furious", ["Azione", "Giallo"], 2003);
+ $movieTwo = new Movie("2 Fast 2 Furious", ["Azione", "Giallo"], 2003, "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSudidhR3TCIzRUMURMV-cOjOYzNH7oTrlVJAUs-goIdhgxKKD");
 
  /**
   * adesso provo a stampare i film che ho inserito sopra
@@ -47,7 +47,7 @@
     <div class="row">
       <div class="col-4">
     <div class="card" style="width: ">
-  <img src="..." class="card-img-top" alt="...">
+  <img src="<?php echo $movieFirst->image; ?>" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

@@ -17,9 +17,10 @@ class movie{
  * @param string $title che produce il titolo
  * @param string $genre che produce il genere
  * @param string $realesyear che produce l'anno che è stato prodotto
+ * @param string $image l'immagine per ogni film
  */
 
- public function __construct($title, $genre, $realesyear,$image,) {
+ public function __construct($title, $genre, $realesyear, $image) {
         $this->title = $title;
         $this->genre = $genre;
         $this->realesyear = $realesyear;
