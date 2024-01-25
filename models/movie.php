@@ -19,10 +19,11 @@ class movie{
  * @param string $realesyear che produce l'anno che è stato prodotto
  */
 
- public function __construct($title, $genre, $realesyear) {
+ public function __construct($title, $genre, $realesyear,$image,) {
         $this->title = $title;
         $this->genre = $genre;
         $this->realesyear = $realesyear;
+        $this->image = $image;
     }
  
 

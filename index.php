@@ -10,7 +10,7 @@
  * creiamo un istanza del movie
  */
 
- $movieFirst = new Movie("Fast and Furious", ["Azione", "Giallo"], 2001);
+ $movieFirst = new Movie("Fast and Furious", ["Azione", "Giallo"], 2001, "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIfclk0cjsddvp1d2hSsOc6j4Oge8zyJq8zvGhG1ErFeRe_6dm");
 
  $movieTwo = new Movie("2 Fast 2 Furious", ["Azione", "Giallo"], 2003);
 
