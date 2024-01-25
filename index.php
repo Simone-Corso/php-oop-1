@@ -10,9 +10,9 @@
  * creiamo un istanza del movie
  */
 
- $movieFirst = new Movie("Fast and Furious", "Azione", 2001);
+ $movieFirst = new Movie("Fast and Furious", ["Azione", "Giallo"], 2001);
 
- $movieTwo = new Movie("2 Fast 2 Furious", "Azione", 2003);
+ $movieTwo = new Movie("2 Fast 2 Furious", ["Azione", "Giallo"], 2003);
 
  /**
   * adesso provo a stampare i film che ho inserito sopra
