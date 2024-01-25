@@ -12,6 +12,10 @@ class movie{
 
 /**
  * qui inserirò il costruttore
+ * 
+ * @param string $title che produce il titolo
+ * @param string $genre che produce il genere
+ * @param string $realesyear che produce l'anno che è stato prodotto
  */
 
  public function __construct($title, $genre, $RealesYear) {
