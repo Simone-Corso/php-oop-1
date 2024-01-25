@@ -33,21 +33,26 @@ foreach ($movies as $movie) {
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
 
 <header>
-  <h1 class="title text-center mt-3 p-5 ">
-    film
-  </h1>
+<nav class="navbar h-50">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">StreamingMovie</a>
+</nav>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
 </header>
 
 <main>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <?php foreach ($movies as $movie) { ?>
                 <div class="col-4 p-3">
@@ -55,8 +60,8 @@ foreach ($movies as $movie) {
                         <img src="<?php echo $movie->image; ?>" class="card-img" alt="">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $movie->title; ?></h5>
-                            <p class="card-text">Genre: <?php echo implode(', ', $movie->genre); ?></p>
-                            <p class="card-text">Year: <?php echo $movie->realesyear; ?></p>
+                            <p class="card-text"> <?php echo implode(', ', $movie->genre); ?></p>
+                            <p class="card-text"> <?php echo $movie->realesyear; ?></p>
                         </div>
                     </div>
                 </div>
