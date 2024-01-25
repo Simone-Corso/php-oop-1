@@ -54,7 +54,7 @@ foreach ($movies as $movie) {
 </header>
 
 <main>
-    <div class="container mt-5">
+    <div class="container-sm mt-5">
         <div class="row d-flex">
             <?php foreach ($movies as $movie) { ?>
                 <div class="col-4 p-3">
